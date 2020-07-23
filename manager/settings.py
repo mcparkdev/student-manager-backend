@@ -9,7 +9,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'ae7a+fm%fkm_&srmty!fa2qh6whkp6-!f&w4wr_1j!8^p$(ww!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ['localhost', '192.168.0.17',
                  '192.168.0.11', "192.168.0.14", "192.168.1.104",
                  "https://colegiocolombocoreano.netlify.app/",
