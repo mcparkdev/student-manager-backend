@@ -136,6 +136,7 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_FILTER_BACKENDS': ['django_filters.rest_framework.DjangoFilterBackend'],
     'TEST_REQUEST_RENDERER_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated'
         'rest_framework.renderers.MultiPartRenderer',
         'rest_framework.renderers.JSONRenderer',
         'rest_framework.renderers.TemplateHTMLRenderer'
@@ -143,12 +144,12 @@ REST_FRAMEWORK = {
 }
 
 CORS_ORIGIN_WHITELIST = [
-    "www.example.com",
     "http://127.0.0.1:8000",
     "http://127.0.0.1:3000",
+    "http://localhost:3000",
     "http://192.168.0.14:3000",
-    "https://colegiocolombocoreano.netlify.app/",
-    "https://colegiocolombocoreano.herokuapp.com/",
+    "https://colegiocolombocoreano.netlify.app",
+    "https://colegiocolombocoreano.herokuapp.com",
 ]
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
