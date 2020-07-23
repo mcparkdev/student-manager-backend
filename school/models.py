@@ -57,7 +57,7 @@ class Staff (models.Model):
     englishName = models.CharField(max_length=255)
     registerDate = models.DateField(default=datetime.date.today)
     contractStartDate = models.DateField(default=datetime.date.today)
-    contractEndDate = models.DateField(null=True)
+    contractEndDate = models.DateField(null=True, blank=True)
     birthDate = models.DateField()
     gender = models.CharField(max_length=255)
     documentType = models.CharField(max_length=255)
