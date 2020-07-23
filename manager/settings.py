@@ -12,8 +12,8 @@ SECRET_KEY = 'ae7a+fm%fkm_&srmty!fa2qh6whkp6-!f&w4wr_1j!8^p$(ww!'
 DEBUG = False
 ALLOWED_HOSTS = ['localhost', '192.168.0.17',
                  '192.168.0.11', "192.168.0.14", "192.168.1.104",
-                 "https://colegiocolombocoreano.netlify.app/login",
-
+                 "https://colegiocolombocoreano.netlify.app/",
+                 "https://colegiocolombocoreano.herokuapp.com/"
                  ]
 
 # Application definition
