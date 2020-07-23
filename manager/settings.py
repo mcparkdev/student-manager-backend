@@ -20,13 +20,13 @@ ALLOWED_HOSTS = ['localhost', '192.168.0.17',
 
 INSTALLED_APPS = [
     'django.contrib.admin',
+    'django.contrib.sites',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'django.contrib.sites',
     'allauth',
     'allauth.account',
     'rest_auth.registration',
